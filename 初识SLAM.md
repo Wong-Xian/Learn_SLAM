@@ -25,3 +25,17 @@
 	- 轴间灵敏度
 	- 噪声密度
 	- 温度漂移
+
+# 库介绍
+## OpenCV
+- 计算机视觉库
+## Eigen
+- 线性代数运算库
+## Sophus
+- 李群运算库
+## ROS
+- 机器人操作系统，一系列帮助构建机器人应用的库
+- The Robot Operating System (ROS) is a set of software libraries and tools that help you build robot applications.
+## Point Cloud
+- 点云库，处理点云的库
+- The Point Cloud Library (PCL) is a standalone, large scale, open project for 2D/3D image and point cloud processing.
