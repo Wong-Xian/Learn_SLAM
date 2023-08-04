@@ -1,45 +1,52 @@
 # 惯性测量单元 IMU
 
 1. 加速度原理
-	1. 线位移式
-	2. 摆式
-	
+    1. 线位移式
+    2. 摆式
 2. 角速度原理
-	1. 激光陀螺仪
-	2. MEMS微机电陀螺仪角速度
-	
+    1. 激光陀螺仪
+    2. MEMS微机电陀螺仪角速度
 3. 磁力原理
-	1. 霍尔效应
-	2. 洛伦兹力
+    1. 霍尔效应
+    2. 洛伦兹力
 
 # IMU 原始数据采集
 
-- 9轴IMU 
-	- 3轴加速度
- 	- 3轴角速度
-  	- 3轴磁力
+- 9轴IMU
+  - 3轴加速度
+  - 3轴角速度
+  - 3轴磁力
 - IMU 性能参数
-	- 量程
-	- 非线性度
-	- 零点偏移
-	- 轴间灵敏度
-	- 噪声密度
-	- 温度漂移
+  - 量程
+  - 非线性度
+  - 零点偏移
+  - 轴间灵敏度
+  - 噪声密度
+  - 温度漂移
 
 # 库介绍
+
 ## OpenCV
+
 - 计算机视觉库
+
 ## Eigen
+
 - 线性代数运算库
+
 ## Sophus
+
 - 李群运算库
+
 ## ROS
+
 - 机器人操作系统，一系列帮助构建机器人应用的库
 - The Robot Operating System (ROS) is a set of software libraries and tools that help you build robot applications.
+
 ## Point Cloud
+
 - 点云库，处理点云的库
 - The Point Cloud Library (PCL) is a standalone, large scale, open project for 2D/3D image and point cloud processing.
-
 
 # 入门 SLAM
 
@@ -61,6 +68,12 @@
    1. 机器人回到了原点，但由于漂移，其位置估计值没有回到原点的现象。
    2. 需要后端具有“识别到过的场景”的能力。
 5. 建图(Mapping)
+   1. 【度量地图】
+      1. 强调精确表示地图中物体的位置关系。
+      2. 稀疏(Sparse)地图（定位用）选取部分具有代表性的东西(路标Landmark)
+      3. 稠密地图（导航用）着重于建模所有看到的东西
+   2. 【拓扑地图】
+      1. 强调地图中元素之间的关系
 
 # 概念辨析
 
