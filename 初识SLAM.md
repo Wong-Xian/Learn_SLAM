@@ -39,3 +39,35 @@
 ## Point Cloud
 - 点云库，处理点云的库
 - The Point Cloud Library (PCL) is a standalone, large scale, open project for 2D/3D image and point cloud processing.
+
+
+# 入门 SLAM
+
+2023年8月3日
+
+- 安装 ROS
+
+# 《视觉SLAM十四讲》
+
+2.2 经典视觉SLAM框架
+
+1. 传感器信息获取
+2. 前端视觉里程计(Visual Odometry, VO)
+   1. 相邻图象之间，相机的运动。
+   2. 累积漂移(Accumulating Drift)：在最简单地估算两帧图像时产生的误差，随着估算的进行不断累积。
+3. 后端（非线性）优化(Optimazation)
+   1. 处理噪声问题。
+4. 回环检测(Loop Closure Detection)
+   1. 机器人回到了原点，但由于漂移，其位置估计值没有回到原点的现象。
+   2. 需要后端具有“识别到过的场景”的能力。
+5. 建图(Mapping)
+
+# 概念辨析
+
+- 单目相机(Monocular)
+- 双目相机(Stereo)
+- 深度相机(RGB-D)
+- 视差(Disparity)：相机移动时，离相机距离近的物体移动块，离相机远的物体移动慢。
+- 尺度(Scale)：单目 SLAM 估计的轨迹和地图 与 真实轨迹和地图 相差一个因子。
+- 尺度不确定性(Scale Ambiguity)：单目 SLAM 无法仅凭图象确定真实尺度。
+- 基线(Baseline)：双目相机两个相机之间的距离。
