@@ -79,7 +79,16 @@
 
 2.4.3 使用cmake
 
-cmake 生成 makefile，再用 make 命令编译程序。
+- cmake 生成 makefile，再用 make 命令编译程序。
+- add_library() 命令可以添加库
+- Linux 中库分为
+  - 静态库 后缀为.a 静态库每次被调用都会生成一个副本
+  - 共享库 后缀为.so 共享库则只有一个副本
+- target_link_libraries(*1 *2) 函数使 *1 文件可以调用 *2 库中的函数。
+
+2.4.5 使用 IDE
+
+推荐 kdevelop 软件。
 
 # 概念辨析
 
