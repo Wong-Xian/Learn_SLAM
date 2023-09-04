@@ -163,8 +163,15 @@
     - 特征描述
       - 方向分配
       - 局部特征描述
-- ORB 特征
+- ORB 特征(Oriented FAST and Rotated BRIEF)
+  - FAST
+    - 解决 SIFT 慢的问题
+    - 解决特征点寻找的问题
+  - BRIEF(Binary Robust Independent Elementary Features)
+    - 解决描述子构造的问题
 - BA (Bundle Adjustment)实现
+  - 在仅给定相机内部矩阵的条件下，对四周物体进行高精度重建。
+  - 利用非线性最小二乘法来求取相机位姿，三维点坐标。
 
 # B站 古月居 SLAM 视频
 
