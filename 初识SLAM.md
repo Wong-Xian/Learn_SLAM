@@ -170,8 +170,8 @@
 
 ### 4.1 李群 李代数 基础
 
-旋转矩阵：特殊正交群 SO(3) Set Orthoganal
-变换矩阵：特殊欧氏群 SE(3) Set Euclidean
+旋转矩阵：特殊正交群 SO(3) Special Orthoganal
+变换矩阵：特殊欧氏群 SE(3) Special Euclidean
 
 对加法不封闭，对乘法封闭。
 
